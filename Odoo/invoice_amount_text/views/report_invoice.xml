@@ -2,8 +2,7 @@
 <openerp>
 <data>
 <template id="report_invoice_text" inherit_id="account.report_invoice_document">
-    <xpath expr="//div/div" position="after">
-
+      <xpath expr="//table[@class='table table-condensed']/following-sibling::div[1]" position="after">
             <div class="row mt32 mb32"> 
                  <div class="pull-right"> 
                    <strong > Arrêté le montant de la présente facture à la somme de : <span class="offset3" t-esc="o.amount_in_word" /></strong>
